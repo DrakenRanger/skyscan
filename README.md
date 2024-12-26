@@ -36,9 +36,9 @@
 **INDEX+LOGIN PAGE⛩️**
 ![image](https://github.com/user-attachments/assets/67344f32-a880-4923-bca8-79f8334c0cd9)
 **Registration PAGE🆔**
-![image](https://github.com/user-attachments/assets/a8f0b609-cf5a-4eb9-b2c0-3814698557e6)
-**VALIDATION🧐🧐**
 ![image](https://github.com/user-attachments/assets/4de66200-9fb8-4bda-b2df-9451a0175cfb)
+**VALIDATION🧐🧐**
+![image](https://github.com/user-attachments/assets/a8f0b609-cf5a-4eb9-b2c0-3814698557e6)
 **DASHBOARD🌐✅**
 ![image](https://github.com/user-attachments/assets/73d11002-efe3-4462-95c3-51a2124dea93)
 **FORECASTING🤖**
