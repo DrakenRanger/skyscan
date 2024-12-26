@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: url('../images/cloud.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	padding-top: 100px;
+}
+#desc{
+	text-align: justify;
+}
+#form-box{
+	width: 90%;
+	height: 90%;
+}
+#danger_alert{
+	display: none;
+}

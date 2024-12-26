@@ -1,0 +1,254 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+body{
+	display: flex;
+	justify-content: center;
+	min-height: 100vh;
+	min-width: 100px;
+	padding: 50px;
+	background: #5598fd;
+	transition: background-image 0.3s ease ;
+	/*background-image: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0,0,0,0.1)),url("image.jpg");*/
+}
+img{
+	width: 90%;
+	background: none;
+}
+.wrapper{
+	display: flex;
+	width: 1200px;
+	min-width: 900px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+.sidebar{
+	width: 20%;
+	min-width: 250px;
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	background-color: rgba(255, 255, 255, 0.815);
+}
+.search{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 30px;
+	margin-top: 20px;
+	position: relative;
+}
+.search input{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ced4da;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 5px;
+	padding: 0 15px;
+	font-size: 14px;
+	color: #495057;
+
+}
+.search input:focus{
+	outline: none;
+	border: 1px solid #5598fd;
+}
+.search button{
+	min-width: 40px;
+	height: 40px;
+	border: none;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	background-color:  #5598fd;
+	font-size: 14px;
+	color: #fff;
+	cursor: pointer;
+}
+.weather-icon{
+	width: 100%;
+	height: 150px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 100px;
+}
+.weather-icon #icon{
+	width: 80%;
+	object-fit: cover;
+}
+.temperature{
+	display: flex;
+}
+.temperature #temp{
+	font-size: 70px;
+	font-weight: 100;
+	line-height: 1;
+}
+.temperature span{
+	font-size: 40px;
+	margin-top: -10px;
+	display: block;
+}
+.divider{
+	width: 100%;
+	height: 1px;
+	margin: 20px 0;
+	background-color: #000;
+}
+.condition-rain{
+	font-size: 14px;
+	text-transform: capitalize;
+}
+.condition-rain div{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 10px;
+}
+.condition-rain div i{
+	width: 20px;
+}
+.location{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	font-size: 16px;
+	margin-top: 60px;
+}
+.main{
+	width: 100%;
+	min-width: 400px;
+	padding: 20px 40px;
+	position: relative;
+	padding-bottom: 90px;
+	background-color: #f6f6f8;
+}
+.main nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+nav .option{
+	display: flex;
+	gap: 20px;
+	align-items: center;
+}
+.option button{
+	border: none;
+	background: transparent;
+	font-size: 16px;
+	font-weight: 600;
+	color: #495057;
+	cursor: pointer;
+	text-transform: capitalize;
+}
+.option button.active{
+	color: #5598fd;
+} 
+nav .units button{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	color: #1a1a1a;
+	background-color: #fff;
+}
+.units button.active{
+	color: #fff;
+	background-color:#1a1a1a ;
+}
+.units button.logout{
+	width: 55px;
+	height: 55px;
+	font-size: 14px;
+	font-weight: bold;
+	background: black;
+	color: white;
+}
+.main .cards{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 50px;
+}
+.cards .card{
+	width: 100px;
+	height: 130px;
+	border-radius: 20px;
+	color: #1a1a1a;
+	background-color: #fff;
+	text-align: center;
+	justify-content: space-between ;
+}
+.card h2{
+	font-size: 15px;
+	font-weight: 600;
+}
+.card .card-icon{
+	width: 70%;
+	margin: 0 auto;
+}
+.card .day-temp{
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.hightlight{
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	margin-top: 50px;
+}
+.hightlight .heading{
+	width: 100%;
+	font-size: 20px;
+	font-weight: 600;
+	text-transform: capitalize;
+}
+.hightlight .card2{
+	width: 250px;
+	height: 150px;
+	border-radius: 20px;
+	color: #1a1a1a;
+	background-color: #fff;
+	padding: 10px 20px;
+	display: flex;
+	flex-direction: column;
+}
+.card2 .card-heading{
+	color: #c2c2c2;
+}
+.card2 .content{
+	margin-top: 20px;
+}
+.card2 .content p:first-child{
+	text-align: center;
+	font-size: 30px;
+}
+.card2 .content p:last-child{
+	font-size: 12px;
+	margin-top: 20px;
+	text-align: left;
+}
+.suggestion-box{
+	background-color: white;
+    width: calc(100% - 2px);
+    max-height: 150px;
+    overflow-y: auto;
+    position: absolute;
+    top: calc(100% + 1px);
+    left: -1px;
+    z-index: 999;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+#suggest{
+	list-style-type: none;
+}
+#suggest li:hover{
+	background-color: grey;
+}
